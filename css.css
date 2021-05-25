@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ height: 100vh;
+ width: 100vw;
+}
+.content{
+ height: 100%;
+ width: 100%;
+ background-image: url(img/bgc.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ font-family: 'Comfortaa';
+}
+.top{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 7%;
+ width: 100%;
+}
+.flag-img{
+ height: 90%;
+ width:15%;
+}
+.search-player{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 10%;
+ width: 100%;
+}
+.down-inf{
+ display: flex;
+ flex-direction: column;
+ height: 83%;
+ width: 100%;
+}
+.img-person{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+}
+.img-player{
+ height: 100%;
+ width: 100%;
+}
+.inf-person{
+ display: flex;
+ height: 100%;
+ width: 100%;
+ background-color: green
+}
+.left,.right{
+ text-align: center;
+ height: 100%;
+ width: 50%;
+}/*
+.right{
+ text-align: center;
+ height: 100%;
+ width: 50%;
+}*/
+p{
+ padding-top: 20px;
+ font-size: 16px;
+ color: white;
+}
+.city-b{
+ font-size: 15px;
+ font-weight: bold;
+}
+
+
+@media  (min-width:1240px) {
+ .flag-img{
+  width: 5%;
+ }
+ .down-inf{
+  flex-direction: row;
+ }
+ .img-player{
+  height: 100%;
+  width: 70%;
+ }
+ .left,.right{
+  text-align: center;
+  padding-top: 30%;
+ }
+ p,.city-b{
+  font-weight: normal;
+  font-size: 25px;
+ }
+ .inf-person{
+  background:none;
+ }
+}
+
+@media (max-width: 1200px ) and (orientation:landscape){
+ .img-player{
+  width: 40%;
+ }
+}
